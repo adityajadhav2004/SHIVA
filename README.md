@@ -64,4 +64,4 @@ This personal assistant is a simple demonstration and may not be suitable for cr
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Mozilla License - see the [LICENSE](LICENSE) file for details.
