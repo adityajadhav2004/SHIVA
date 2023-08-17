@@ -1,22 +1,25 @@
-import webbrowser
-import os
-import pyttsx3
-import datetime
-import speech_recognition as sr
-import subprocess
-import operator
-import requests
-import json
-import smtplib
-import random
+# py sirf jiske pc me python install. So hum log iska .exe (Exeuctable file)
+# Library importing
+import webbrowser # web automation 
+import os # basic file input and output
+import pyttsx3 # text to speech module 
+import datetime # for retriving time
+import speech_recognition as sr # recognization of voice
+import subprocess # basic automation 
+import operator # for mathemathic calculation 
+import requests # basic url oper
+import json # email 
+import smtplib # mail
+import random # for random outputs
+import wikipedia 
 
 
 
 def speak(text):
     engine = pyttsx3.init('sapi5')
     voices = engine.getProperty('voices')
-    engine.setProperty('voice', voices[0].id)
-    engine.say(text)
+    engine.setProperty('voice', voices[0].id) # 0 for men and 1 for lady
+    engine.say(text) 
     engine.runAndWait()
 
 
@@ -25,12 +28,12 @@ def listen():
 
     with sr.Microphone() as source:
         print("Listening...")
-        recognizer.pause_threshold = 1
+        recognizer.pause_threshold = 1 # pausing time 
         recognizer.energy_threshold = 4000
         audio = recognizer.listen(source, timeout=60)
 
     try:
-        print("Recognizing...")
+        print("Recognizing...") 
         query = recognizer.recognize_google(audio, language="en-in")
         print(f"User: {query}\n")
         return query.lower()
@@ -222,7 +225,7 @@ def create_email():
 def get_youtube_search():
     speak("Sure, what would you like to search for on YouTube?")
     query = listen()
-    search_url = f"https://www.youtube.com/results?search_query={query}"
+    search_url = f"https://www.youtube.com/results?search_query={query}" #raw text 
     webbrowser.open(search_url)
     speak("Searching on YouTube...")  
 
