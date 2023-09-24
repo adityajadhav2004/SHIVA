@@ -1,4 +1,3 @@
-# py sirf jiske pc me python install. So hum log iska .exe (Exeuctable file)
 # Library importing
 import webbrowser # web automation 
 import os # basic file input and output
