@@ -11,6 +11,18 @@ import json # email
 import smtplib # mail
 import random # for random outputs
 import wikipedia 
+from pathlib import Path
+
+# from tkinter import *
+# Explicit imports to satisfy Flake8
+from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
+
+
+
+
+
+
+
 
 
 
@@ -232,7 +244,49 @@ def get_youtube_search():
 greet()
 todo_list = []
 
-while True:
+OUTPUT_PATH = Path(__file__).parent
+ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\santo\OneDrive\Documents\Python Scripts\build\assets\frame0")
+
+
+def relative_to_assets(path: str) -> Path:
+    return ASSETS_PATH / Path(path)
+
+
+window = Tk()
+
+window.geometry("1185x800")
+window.configure(bg = "#FFFFFF")
+
+
+canvas = Canvas(
+    window,
+    bg = "#FFFFFF",
+    height = 800,
+    width = 1185,
+    bd = 0,
+    highlightthickness = 0,
+    relief = "ridge"
+)
+
+canvas.place(x = 0, y = 0)
+image_image_1 = PhotoImage(
+    file=relative_to_assets("image_1.png"))
+image_1 = canvas.create_image(
+    626.0,
+    422.0,
+    image=image_image_1
+)
+
+image_image_2 = PhotoImage(
+    file=relative_to_assets("image_2.png"))
+image_2 = canvas.create_image(
+    634.0,
+    669.0,
+    image=image_image_2
+)
+
+def button_click():
+   while True:
     speak("How can I assist you?")
     user_input = listen()
 
@@ -274,6 +328,66 @@ while True:
         webbrowser.open(search_url)
     elif "exit" in user_input or "goodbye" in user_input or "bye" in user_input:
         speak("Goodbye!")
+        window.destroy()
+
         break
     else:
         speak("I'm sorry, I didn't understand. Please try again.")
+
+
+
+# -------------------------------------------------
+
+
+
+button_image_1 = PhotoImage(
+    file=relative_to_assets("button_1.png"))
+button_1 = Button(
+    image=button_image_1,
+    borderwidth=0,
+    highlightthickness=0,
+    command= button_click,
+    relief="flat",
+    bg='#FFFFFF'
+
+)
+
+
+
+
+button_1.place(
+    x=543.0,
+    y=584.0,
+    width=183.0,
+    height=172.0
+)
+
+image_image_3 = PhotoImage(
+    file=relative_to_assets("image_3.png"))
+image_3 = canvas.create_image(
+    625.0,
+    199.0,
+    image=image_image_3
+)
+
+canvas.create_text(
+    456.0,
+    378.0,
+    anchor="nw",
+    text="S.H.I.V.A",
+    fill="#000000",
+    font=("Inter ExtraBold", 64 * -1)
+)
+window.resizable(True, True)
+window.mainloop()
+
+
+
+
+
+
+
+
+
+
+
