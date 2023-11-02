@@ -54,6 +54,11 @@ The personal assistant comes with the following features:
 
 - The assistant uses the Google search engine by default for web searches. You can modify the `get_google_search` function to use a different search engine if desired.
 
+## Update
+- Path needs to be changed to the asset folder in order to access the GUI Interface
+- Change this path to " ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\santo\OneDrive\Documents\Python Scripts\build\assets\frame0")" your asset folder path with frame0 folder
+ 
+
 ## Contribution
 
 Feel free to contribute to this project by opening issues or pull requests.
