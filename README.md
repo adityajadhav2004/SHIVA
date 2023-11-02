@@ -56,7 +56,7 @@ The personal assistant comes with the following features:
 
 ## Update
 - Path needs to be changed to the asset folder in order to access the GUI Interface
-- Change this path to " ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\santo\OneDrive\Documents\Python Scripts\build\assets\frame0")" your asset folder path with frame0 folder
+- Change this path to `ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\santo\OneDrive\Documents\Python Scripts\build\assets\frame0")` your asset folder path with frame0 folder
  
 
 ## Contribution
