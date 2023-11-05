@@ -129,8 +129,8 @@ def do_math():
 
 
 def get_news():
-    api_key = "4448e7a43d39049b2f20069ce3578155"
-    url = f"https://newsapi.org/v2/top-headlines?country=us&apiKey={api_key}"
+    api_key = "045b31c4ebbf44c69982f255ad3efdd5"
+    url = f"https://newsapi.org/v2/top-headlines?sources=the-times-of-india&apiKey={api_key}"
 
     try:
         response = requests.get(url)
