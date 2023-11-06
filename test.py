@@ -136,7 +136,7 @@ def get_news():
         response = requests.get(url)
         news_data = response.json()
 
-        if news_data["status"] == "ok":
+        if news_data["status"] == "ok": 
             articles = news_data["articles"]
             speak("Here are the top news headlines:")
             for article in articles[:5]:
