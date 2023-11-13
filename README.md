@@ -1,6 +1,7 @@
-# Personal Assistant
+# S.H.I.V.A.
 
-This is a simple command-line-based personal assistant implemented in Python. The assistant can perform various tasks, including creating a to-do list, performing mathematical calculations, fetching news headlines, checking the weather, telling jokes, sending emails, opening YouTube, and searching Google.
+Shiva: A Python voice assistant utilizing pyttsx3 and speech recognition. It offers web browsing, note-taking, Google searches, news updates, and weather retrieval. With a user-friendly GUI and robust error handling, Shiva aims for efficient and seamless interaction while maintaining a GUI Interface.
+
 
 ## Requirements
 
@@ -61,6 +62,11 @@ The personal assistant comes with the following features:
 # Video Demonstration
 
 https://github.com/adityajadhav2004/Jarvis/assets/78535523/f8cc72ac-bfb0-46fc-bb05-42d8142f6b73
+
+# IEEE Format Documentation
+[1699268138923.pdf](https://github.com/adityajadhav2004/SHIVA/files/13334142/1699268138923.pdf)
+
+
 
 ## Contribution
 
