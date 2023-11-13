@@ -1,4 +1,4 @@
-# S.H.I.V.A.
+# S.H.I.V.A. (Smart Human Interface With Voice Assistance)
 
 Shiva: A Python voice assistant utilizing pyttsx3 and speech recognition. It offers web browsing, note-taking, Google searches, news updates, and weather retrieval. With a user-friendly GUI and robust error handling, Shiva aims for efficient and seamless interaction while maintaining a GUI Interface.
 
