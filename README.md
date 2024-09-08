@@ -33,6 +33,9 @@ The personal assistant comes with the following features:
 - YouTube: The assistant can open YouTube or perform a search on YouTube.
 - Note Taking: The user can dictate notes to the assistant, which will be saved to text files.
 
+## Installing Dependencies
+you can just "pip install pyttsx3 speechrecognition requests smtplib"
+
 ## How to Use
 
 1. Make sure you have installed all the required libraries mentioned in the "Requirements" section.
