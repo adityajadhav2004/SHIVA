@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #app {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Theme CSS Variables */
+.app {
+  --bg-primary: #f5f7fa;
+  --bg-secondary: #eef1f5;
+  --bg-gradient-start: #ffffff;
+  --bg-gradient-end: #e8ecf1;
+  --text-primary: #1a1d23;
+  --text-secondary: #6b7280;
+  --text-muted: #9ca3af;
+  --accent-glow: rgba(6, 182, 212, 0.4);
+  --accent-glow-strong: rgba(6, 182, 212, 0.7);
+  --glass-bg: rgba(255, 255, 255, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.5);
+  --glass-shadow: rgba(0, 0, 0, 0.05);
+  --input-bg: rgba(255, 255, 255, 0.7);
+  --input-border: rgba(0, 0, 0, 0.08);
+  --btn-silver-start: #f8f9fa;
+  --btn-silver-end: #e2e5e9;
+  --btn-silver-border: rgba(0, 0, 0, 0.1);
+  --btn-hover-glow: rgba(6, 182, 212, 0.3);
+  --dialog-bg: rgba(255, 255, 255, 0.85);
+  --dialog-border: rgba(255, 255, 255, 0.6);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.app.dark {
+  --bg-primary: #0f1115;
+  --bg-secondary: #16181d;
+  --bg-gradient-start: #0f1115;
+  --bg-gradient-end: #1a1d26;
+  --text-primary: #f0f2f5;
+  --text-secondary: #a1a7b3;
+  --text-muted: #5a6070;
+  --accent-glow: rgba(34, 211, 238, 0.35);
+  --accent-glow-strong: rgba(34, 211, 238, 0.6);
+  --glass-bg: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: rgba(0, 0, 0, 0.3);
+  --input-bg: rgba(255, 255, 255, 0.06);
+  --input-border: rgba(255, 255, 255, 0.12);
+  --btn-silver-start: #2a2d35;
+  --btn-silver-end: #1f2128;
+  --btn-silver-border: rgba(255, 255, 255, 0.1);
+  --btn-hover-glow: rgba(34, 211, 238, 0.25);
+  --dialog-bg: rgba(22, 24, 29, 0.9);
+  --dialog-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.05); }
+}
+
+@keyframes drift {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  33% { transform: translate(30px, -30px) rotate(120deg); }
+  66% { transform: translate(-20px, 20px) rotate(240deg); }
+  100% { transform: translate(0, 0) rotate(360deg); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes aura-shift {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 100% 50%; }
+  50% { background-position: 100% 100%; }
+  75% { background-position: 0% 100%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes aura-rotate {
+  0% { transform: rotate(0deg) scale(1); }
+  33% { transform: rotate(120deg) scale(1.1); }
+  66% { transform: rotate(240deg) scale(0.95); }
+  100% { transform: rotate(360deg) scale(1); }
+}
